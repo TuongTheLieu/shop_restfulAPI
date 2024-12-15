@@ -38,7 +38,6 @@ public class User extends Baseentity implements UserDetails {
     private int facebookAccountId;
     @Column(name = "google_account_id")
     private int googleAccountId;
-
     @ManyToOne
     @JoinColumn(name = "role_id")
     private Role role;
